@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A beginner-friendly example of modern HTML5 structure with accessibility and SEO best practices">
+    <meta name="keywords" content="HTML5, semantic HTML, accessibility, SEO, web development, beginner">
+    <meta name="author" content="Web Dev Beginner">
+    <title>HTML5 Semantic Example | Web Dev for Beginners</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: #6e8efb;
+            margin: 1.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: #a777e3;
+            margin: 1.2rem 0 0.8rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        nav {
+            background-color: #333;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #6e8efb;
+        }
+        
+        main {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        article {
+            flex: 3;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        aside {
+            flex: 1;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        section {
+            margin-bottom: 2rem;
+        }
+        
+        .code-example {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        
+        .tip-box {
+            background-color: #e6f7ff;
+            border-left: 4px solid #6e8efb;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        
+        .tip-box h4 {
+            color: #6e8efb;
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header role="banner">
+        <h1>HTML5 Semantic Web Page</h1>
+        <p>A beginner's guide to modern, accessible web structure</p>
+    </header>
+
+    <!-- Navigation section -->
+    <nav role="navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#semantics">Semantics</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+            <li><a href="#seo">SEO</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content section -->
+    <main role="main">
+        <article>
+            <section id="intro">
+                <h2>Welcome to HTML5 Semantics</h2>
+                <p>This page demonstrates how to use HTML5 semantic elements to create a well-structured, accessible webpage that follows SEO best practices.</p>
+                
+                <div class="tip-box">
+                    <h4>Beginner Tip</h4>
+                    <p>Semantic HTML uses elements that clearly describe their meaning to both browsers and developers.</p>
+                </div>
+            </section>
+
+            <section id="semantics">
+                <h2>Why Semantic HTML Matters</h2>
+                <p>Semantic HTML helps search engines understand your content, improves accessibility for screen readers, and makes your code easier to maintain.</p>
+                
+                <h3>Common Semantic Elements</h3>
+                <ul>
+                    <li><code>&lt;header&gt;</code> - Introductory content</li>
+                    <li><code>&lt;nav&gt;</code> - Navigation links</li>
+                    <li><code>&lt;main&gt;</code> - Main content of the document</li>
+                    <li><code>&lt;article&gt;</code> - Self-contained composition</li>
+                    <li><code>&lt;section&gt;</code> - Thematic grouping of content</li>
+                    <li><code>&lt;aside&gt;</code> - Content indirectly related to main content</li>
+                    <li><code>&lt;footer&gt;</code> - Footer for its nearest section</li>
+                </ul>
+                
+                <div class="code-example">
+                    <pre><code>&lt;article&gt;
+    &lt;header&gt;
+        &lt;h2&gt;Article Title&lt;/h2&gt;
+        &lt;p&gt;Posted on January 1, 2023&lt;/p&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+        &lt;p&gt;Article content goes here...&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Article footer content&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/article&gt;</code></pre>
+                </div>
+            </section>
+
+            <section id="accessibility">
+                <h2>Accessibility Basics</h2>
+                <p>Web accessibility ensures that people with disabilities can perceive, understand, navigate, and interact with websites.</p>
+                
+                <h3>Simple Accessibility Tips</h3>
+                <ul>
+                    <li>Use semantic HTML elements</li>
+                    <li>Provide alt text for images</li>
+                    <li>Ensure sufficient color contrast</li>
+                    <li>Use descriptive link text</li>
+                    <li>Make forms accessible with proper labels</li>
+                </ul>
+                
+                <div class="tip-box">
+                    <h4>Did You Know?</h4>
+                    <p>Using proper heading structure (h1 > h2 > h3, etc.) is one of the most important aspects of web accessibility.</p>
+                </div>
+            </section>
+
+            <section id="seo">
+                <h2>SEO Fundamentals</h2>
+                <p>Search Engine Optimization helps your website appear in search results. Semantic HTML forms the foundation of good SEO.</p>
+                
+                <h3>HTML Elements That Help SEO</h3>
+                <ul>
+                    <li>Title tags (<code>&lt;title&gt;</code>)</li>
+                    <li>Meta description tags</li>
+                    <li>Heading tags (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>)</li>
+                    <li>Semantic structure elements</li>
+                    <li>Image alt attributes</li>
+                </ul>
+            </section>
+        </article>
+
+        <!-- Sidebar content -->
+        <aside role="complementary" aria-labelledby="aside-heading">
+            <h2 id="aside-heading">Quick Reference</h2>
+            
+            <section>
+                <h3>HTML5 Semantic Tags</h3>
+                <ul>
+                    <li><code>&lt;header&gt;</code></li>
+                    <li><code>&lt;footer&gt;</code></li>
+                    <li><code>&lt;main&gt;</code></li>
+                    <li><code>&lt;nav&gt;</code></li>
+                    <li><code>&lt;article&gt;</code></li>
+                    <li><code>&lt;section&gt;</code></li>
+                    <li><code>&lt;aside&gt;</code></li>
+                    <li><code>&lt;figure&gt;</code></li>
+                    <li><code>&lt;figcaption&gt;</code></li>
+                    <li><code>&lt;time&gt;</code></li>
+                </ul>
+            </section>
+            
+            <section>
+                <h3>Accessibility Attributes</h3>
+                <ul>
+                    <li><code>alt</code> - for images</li>
+                    <li><code>aria-label</code> - for element labels</li>
+                    <li><code>role</code> - defines element purpose</li>
+                    <li><code>tabindex</code> - controls tab order</li>
+                </ul>
+            </section>
+            
+            <div class="tip-box">
+                <h4>Remember</h4>
+                <p>Good HTML structure benefits everyone: users, developers, and search engines!</p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer section -->
+    <footer role="contentinfo">
+        <p>Created for educational purposes to demonstrate HTML5 semantic structure, accessibility, and SEO basics.</p>
+        <p>&copy; 2025 Bongani Simango. All rights reserved.</p>
+        <p>Contact: <a href="Bonganisimango@">beginner@webdev.com</a></p>
+    </footer>
+</body>
+</html>
